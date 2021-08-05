@@ -77,10 +77,10 @@ strong {
 }
 .btn {
   display: inline-block;
-  padding: 0.5em 2.5em;
+  padding: 1em 3.5em;
   margin-top: 2.5em;
-  background: var(--clr-gradient);
-  color: var(--clr-dark);
+  background: var(--clr-light);
+  color: var(--clr-accent);
   text-decoration: none;
   cursor: pointer;
   font-size: 0.8rem;
@@ -88,6 +88,7 @@ strong {
   letter-spacing: 2px;
   font-weight: var(--fw-bold);
   transition: transform 200ms ease-in-out;
+  border-radius: 5px;
 }
 .btn:hover {
   transform: scale(1.1);
@@ -389,6 +390,8 @@ header {
 .portfolio__item {
   background: var(--clr-gradient);
   overflow: hidden;
+  margin-right: 5px;
+  margin-top: 5px;
 }
 
 .portfolio__img {
@@ -416,6 +419,7 @@ header {
   color: var(--clr-accent);
   text-decoration: none;
   margin: 0 0.5em;
+  font-size: var(--fs-h4);
 }
 
 .social-media__list {
@@ -436,7 +440,7 @@ header {
   color: var(--clr-accent);
   text-align: center;
   padding: 2.5em 0;
-  font-size: var(--fs-h3);
+  font-size: var(--fs-h4);
 }
 
 .footer a {
@@ -448,7 +452,6 @@ header {
   font-weight: var(--fw-bold);
 }
 
-.footer__link:hover,
 .social-list__link:hover {
   opacity: 0.7;
 }
@@ -467,6 +470,11 @@ header {
 
 .social-list__item {
   margin: 0 0.5em;
+}
+
+.social-list__item:hover {
+  text-decoration: underline;
+  opacity: 0.7;
 }
 
 .social-list__link {
