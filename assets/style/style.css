@@ -7,6 +7,9 @@
 /* Custom Properties, update these for your own design */
 
 :root {
+  --background-light: #faeee7;
+  --background-dark: #282625;
+
   --ff-primary: "Lora", serif;
   --ff-secondary: "Roboto Slab", serif;
 
@@ -15,16 +18,18 @@
 
   --clr-light: #fff;
   --clr-dark: #303030;
-  --clr-accent: #a8758b;
-  --clr-accent-transparent: rgba(168, 117, 139, 0.5);
+  --clr-accent: #33272a;
+  --clr-accent-transparent: rgba(226, 33, 106, 0.5);
   --clr-pink: #bfabb4;
-  --clr-light-pink: #e2cad4;
+  --clr-dark-pink: #e2216a;
+  --clr-light-pink: rgb(249, 224, 223, 0.5);
 
   --clr-gradient: radial-gradient(
     circle,
-    rgba(224, 210, 234, 1) 30%,
-    rgb(245, 192, 190) 100%
+    rgba(250, 238, 231) 50%,
+    rgb(248, 253, 242) 70%
   );
+
 
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
@@ -46,6 +51,14 @@
 }
 
 /* General styles */
+.dark-theme {
+  --clr-gradient: #1a1919;
+  --clr-dark-pink: #faeee7;
+  --clr-accent: #faeee7;
+  --background-light: #1a1919;
+
+
+}
 html {
   scroll-behavior: smooth;
 }
@@ -60,7 +73,20 @@ body {
 }
 
 body p {
-  color: var(--clr-light);
+  color: var(--clr-accent);
+}
+
+.nav-bar {
+  width: 84%;
+  display: flex;
+  margin: auto;
+  padding-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  width: 100px;
+  cursor: pointer;
 }
 
 .site {
@@ -145,11 +171,13 @@ h3 {
 
 .section__subtitle--intro,
 .section__subtitle--about {
-  background: var(--clr-light);
+  background: var(--background-light);
+  border-top: solid var(--clr-dark-pink) ;
   padding: 0.25em 1em;
   font-family: var(--ff-secondary);
   margin-bottom: 1em;
   color: var(--clr-accent);
+  border-bottom: ;
 }
 
 /* header */
@@ -186,13 +214,12 @@ h3 {
 }
 
 .nav__link:hover {
-  color: var(--clr-accent);
+  color: var(--clr-accent-transparent);
 }
 
 .nav-toggle {
   padding: 1em 0.5em;
   background: var(--clr-accent-transparent);
-  border: 0;
   border-radius: 5px;
   cursor: pointer;
   position: fixed;
@@ -301,14 +328,14 @@ h3 {
 /* my services */
 
 .my-services {
-  background-color: var(--clr-gradient);
+  background-color: var(--background-light);
   background-size: cover;
-  color: var(--clr-light);
+  color: var(--clr-accent);
   text-align: center;
 }
 
 .section__title--services {
-  color: var(--clr-light);
+  color: var(---clr-accent);
   position: relative;
 }
 
@@ -318,7 +345,7 @@ h3 {
   width: 25%;
   height: 1px;
   margin: 0.5em auto 1em;
-  background: var(--clr-light);
+  background: var(--background-light);
   opacity: 0.25;
 }
 
@@ -386,7 +413,7 @@ h3 {
 
 .my-work {
   background-color: var(--clr-gradient);
-  color: var(--clr-light);
+  color: var(--clr-accent);
   text-align: center;
 }
 
@@ -458,13 +485,13 @@ h3 {
 
 /* footer index */
 .social-media__links {
-  color: var(--clr-light);
+  color: var(--clr-dark-pink);
   text-align: center;
   padding: 1em 0;
   font-size: var(--fs-h4);
 }
 .social-media__links a {
-  color: var(--clr-accent);
+  color: var(--clr-dark-pink);
   text-decoration: none;
   margin: 0 0.5em;
   font-size: var(--fs-h4);
@@ -473,7 +500,7 @@ h3 {
 .social-media__list {
   list-style: none;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   text-align: center;
   /* padding: 2.5em 0; */
 }
@@ -541,4 +568,17 @@ h3 {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+}
+
+
+/* ---------- DARK MODE ------------ */
+
+#icon {
+  width: 25px;
+  cursor: pointer;
+}
+
+nav ul {
+  flex: 1;
+  text-align: right;
 }
