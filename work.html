@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rocio's Learning Path</title>
+    <title>Work experience</title>
     <link rel="stylesheet" href="/assets/style/style.css" />
     <link
       rel="stylesheet"
@@ -13,33 +13,39 @@
     />
     <!-- fonts -->
     <link
-      href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,800;1,400&display=swap"
       rel="stylesheet"
     />
+    <!-- css -->
+    <link rel="stylesheet" href="aos-by-red.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
-      <nav class="nav-bar">
-        <img src="/assets/images/logo.png" class="logo" id="logo"/>
-        <ul class="social-media__list social-media__links">
-          <li class="social-media__link">
-            <a href="/about.html">about</a>
-          </li>
-          <li class="social-media__link">
-            <a href="/contact.html">contact</a>
-          </li>
-        </ul>
-        <!-- <button class="nav-toggle" aria-label="toggle navigation">
+    <nav class="nav-bar">
+      <a href="/index.html"
+        ><img src="/assets/images/logo.png" class="logo" id="logo"
+      /></a>
+      <ul class="social-media__list social-media__links">
+        <li class="social-media__link">
+          <a href="/about.html">about</a>
+        </li>
+        <li class="social-media__link">
+          <a href="/contact.html">contact</a>
+        </li>
+      </ul>
+      <!-- <button class="nav-toggle" aria-label="toggle navigation">
           <span class="hamburger"></span>
         </button> -->
-        <img src="assets/images/dark.png" id="icon" />
-      </nav>
+      <img src="assets/images/dark.png" id="icon" />
+    </nav>
     <!-- My Services -->
     <section class="my-services" id="projects">
-      <h2 class="section__title section__title--projects">Work in progress 🚧</h2>
+      <h2 class="section__title section__title--projects">Work</h2>
       <div class="services">
         <!-- service 1 -->
-        <!-- <div class="service">
-          <h3>Full-Stack developer 👩🏽‍💻</h3>
+        <div class="service" data-aos="slide-up" data-aos-once="true">
+          <h3>Full-Stack developer</h3>
+          <h4>Blendle by Cafeyn</h4>
           <p>
             I create applications using using Ruby on Rails frameworks. I am
             responsable for writing the logic in Ruby, around the framework
@@ -48,8 +54,8 @@
             work with the application.
           </p>
         </div>
-        <div class="service">
-          <h3>Design 💅🏽</h3>
+        <div class="service" data-aos="slide-up" data-aos-once="true">
+          <h3>React Giphy App</h3>
           <p>
             I define the specificatoins and design the product or service
             through prototypes. I look for the best desing and develop solutions
@@ -57,20 +63,27 @@
             possible time.
           </p>
         </div>
-        <div class="service">
-          <h3>Learning 📖</h3>
+        <div class="service" data-aos="slide-up" data-aos-once="true">
+          <h3>Nutrition Anywhere</h3>
           <p>
             I look foward to become a front-end professional using technologies
             like Javascript and React. At the moment I developed small solutions
             with these two languagesh as a way of learning.
           </p>
-        </div> -->
+        </div>
+        <div class="service" data-aos="slide-up" data-aos-once="true">
+          <h3>Bikes Anywhere</h3>
+          <p>
+            I look foward to become a front-end professional using technologies
+            like Javascript and React. At the moment I developed small solutions
+            with these two languagesh as a way of learning.
+          </p>
+        </div>
       </div>
-      <!-- <a href="/projects" class="btn"> My projects</a> -->
     </section>
 
     <!-- footer -->
-    <!-- <footer class="footer">
+    <div class="footer">
       <ul class="social-list">
         <li class="social-list__item">
           <a
@@ -90,8 +103,33 @@
             linkedin
           </a>
         </li>
+        <li class="social-list__item">
+          <a
+            class="social-link__link"
+            href="https://twitter.com/rojalifi"
+            target="_blank"
+          >
+            twitter
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a
+            class="social-link__link"
+            href="https://instagram.com/thisisroci"
+            target="_blank"
+          >
+            instagram
+          </a>
+        </li>
       </ul>
-    </footer> -->
+    </div>
     <script src="/assets/js/index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 2000,
+        once: true,
+      });
+    </script>
   </body>
 </html>
