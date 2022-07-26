@@ -10,7 +10,7 @@
   --background-light: #faeee7;
   --background-dark: #282625;
 
-  --ff-primary: "Lora", serif;
+  --ff-primary: "Playfair Display", serif;
   --ff-secondary: "Roboto Slab", serif;
 
   --fw-reg: 400;
@@ -30,12 +30,12 @@
     rgb(248, 253, 242) 70%
   );
 
-
-  --fs-h1: 3rem;
-  --fs-h2: 2.25rem;
-  --fs-h3: 1.25rem;
-  --fs-h4: 1.15rem;
-  --fs-body: 1rem;
+  --fs-h1: 3.5rem;
+  --fs-h2: 2.3rem;
+  --fs-h3: 1.3rem;
+  --fs-h4: 1.3rem;
+  --fs-body: 1.8rem;
+  --fs-footer: 1.2rem;
 
   --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
     0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
@@ -56,8 +56,6 @@
   --clr-dark-pink: #faeee7;
   --clr-accent: #faeee7;
   --background-light: #1a1919;
-
-
 }
 html {
   scroll-behavior: smooth;
@@ -172,7 +170,7 @@ h3 {
 .section__subtitle--intro,
 .section__subtitle--about {
   background: var(--background-light);
-  border-top: solid var(--clr-dark-pink) ;
+  border-top: solid var(--clr-dark-pink);
   padding: 0.25em 1em;
   font-family: var(--ff-secondary);
   margin-bottom: 1em;
@@ -348,20 +346,22 @@ h3 {
 }
 
 .service {
-  max-width: 500px;
+  background: var(--clr-light);
+  max-width: 700px;
   margin: 0 auto;
   margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 2em;
+  border-radius: 5px;
 }
 
 @media (min-width: 800px) {
   .services {
     display: flex;
+    flex-direction: column;
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
-  }
-  .service + .service {
-    margin-left: 2em;
   }
 }
 /* who am i? */
@@ -508,11 +508,10 @@ h3 {
 /* footer */
 
 .footer {
-  background: var(--clr-gradient);
-  color: var(--clr-accent);
+  color: var(--clr-dark-pink);
   text-align: center;
-  padding: 2.5em 0;
-  font-size: var(--fs-h4);
+  padding-bottom: 3em;
+  font-size: var(--fs-footer);
 }
 
 .footer a {
@@ -567,7 +566,6 @@ h3 {
   margin-right: auto;
 }
 
-
 /* ---------- DARK MODE ------------ */
 
 #icon {
@@ -578,4 +576,37 @@ h3 {
 nav ul {
   flex: 1;
   text-align: right;
+}
+
+/* Get in touch links */
+
+.get-in-touch__links {
+  color: var(--clr-accent);
+  padding-bottom: 3em;
+  font-size: var(--fs-body);
+  margin: 0;
+}
+
+.get-in-touch__links a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.social-list__contact {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+.title__get-in-touch {
+  padding-top: 2rem;
+}
+
+.social-list__contact-link {
+  margin-right: 1.5em;
+}
+
+.social-list__contact-link:hover {
+  text-decoration: underline;
+  opacity: 0.7;
 }
