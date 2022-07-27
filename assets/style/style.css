@@ -21,6 +21,7 @@
   --clr-accent: #33272a;
   --clr-accent-transparent: rgba(226, 33, 106, 0.5);
   --clr-pink: #bfabb4;
+  --clr-baby-pink: #f5adbe;
   --clr-dark-pink: #e2216a;
   --clr-light-pink: rgb(249, 224, 223, 0.5);
 
@@ -67,6 +68,8 @@
   --clr-dark-pink: #faeee7;
   --clr-accent: #faeee7;
   --background-light: #1a1919;
+  --clr-light:#222121;
+  --clr-baby-pink: #e2216a;
 }
 html {
   scroll-behavior: smooth;
@@ -387,7 +390,7 @@ h3 {
 .section__service-description-tech{
   font-size: var( --fs-work-d);
   text-decoration: underline;
-  text-decoration-color: #f5adbe;
+  text-decoration-color: var(--clr-baby-pink);
   
 }
 
