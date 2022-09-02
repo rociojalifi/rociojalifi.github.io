@@ -13,6 +13,9 @@ let logo = document.getElementById("logo")
 let icon = document.getElementById("icon");
 
 checkStatus();
+icon.addEventListener('click', (e) => {
+  e.preventDefault();
+})
 
 icon.onclick = function () {
   document.body.classList.toggle("dark-theme");
